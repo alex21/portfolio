@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Front-End Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Portfolio</a>
+  </div>
+</nav>
+
+<header class="hero text-white text-center">
+   <div class="row justify-content-center text-center">
+        <div class="col-md-7 p-5 ">
+          <h1 class="heading gsap-reveal-hero mb-3 mt-5"><span class="reveal-wrap">
+            <span class="cover" style="margin-left: 102%;"></span><span class="reveal-content" style="transform: matrix(1, 0, 0, 1, 0, 0);"><strong>Front-End<span class="text-primary">.</span>Web Developer</strong></span></span></h1>
+
+<!-- <h2><span class="reveal-wrap">
+           Aleksandar Stojanovic
+          </h2> -->
+
+          <h3 class="subheading gsap-reveal-hero mb-4"><span class="reveal-wrap"><span class="cover" style="margin-left: 102%;"></span><span class="reveal-content" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+            Front-End Web Developer with 10+ years of experience. Designing and developing modern websites with a focus on usability and performance.
+          </span></span></h3>
+
+          <p class="gsap-reveal-hero">
+            <span class="reveal-wrap">
+                <span class="cover" style="margin-left: 102%;"></span>
+                <span class="reveal-content" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#readmore"  class="btn btn-outline-black">
+                        Read more about me</a></span></span></p>
+         
+        </div>
+      </div>
+</header>
+
+
+<section class="container my-4" id="projects">
+
+    <h2 class="text-center mb-5 pt-4">Selected Projects</h2>
+
+    <!-- FILTERS -->
+    <div class="text-center mb-5 pm-1 project-filters">
+        <button class="filter-btn active" data-filter="*">All</button>
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+        <button class="filter-btn" data-filter="personal">Personal</button>
+        <button class="filter-btn" data-filter="seo">SEO</button>
+    </div>
+
+    <!-- MASONRY -->
+    <div class="masonry-grid">
+
+        <div class="masonry-item wordpress seo">
+            <img src="images/img_1.jpg" alt="">
+            <div class="masonry-content">
+                <h5>Business Website</h5>
+                <p>Custom WordPress theme for a small business.</p>
+                <span>HTML</span><span>CSS</span><span>WordPress</span>
+            </div>
+        </div>
+
+        <div class="masonry-item landing seo">
+            <img src="images/img_2.jpg" alt="">
+            <div class="masonry-content">
+                <h5>Landing Page</h5>
+                <p>High-conversion landing page optimized for SEO.</p>
+                <span>Bootstrap</span><span>SEO</span>
+            </div>
+        </div>
+
+        <div class="masonry-item personal">
+            <img src="images/img_3.jpg" alt="">
+            <div class="masonry-content">
+                <h5>Personal Project</h5>
+                <p>Personal web project showcasing development skills.</p>
+                <span>HTML</span><span>CSS</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="bg-light py-5 pb-0 about-me" id="readmore">
+    <div class="container text-center">
+        
+        
+        <div class="container" >
+             <div class="row">
+            <div class="col-lg-12 text-center" style="position: relative;top: -149px;">
+            <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mb-3" style="border: 7px solid #fff;">
+            <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero mt-3">Aleksandar Stojanovic</h3>
+            <p class="gsap-reveal-hero text-center pt-3">Front-End Web Developer</p>
+          </div>
+            <div class="col-lg-12 " style="position: relative;top: -80px;">
+            <p class="mt-0">Over the years, I’ve built and maintained 80+ websites for small and medium
+businesses, working on both agency and freelance projects.
+</p><p>
+My work often covers the full front-end process — from initial design concepts,
+layout and UI details, through clean HTML/CSS implementation, to custom
+WordPress themes and CMS-ready templates.
+</p><p>
+In addition to development, I’ve worked on visual branding tasks such as logo
+design, vector graphics, print-ready materials and photo optimization, ensuring
+that both design and code work together as a consistent, practical solution.
+</p><p>
+I focus on clear structure, maintainable code and SEO-friendly implementation,
+building websites that remain reliable and easy to manage long after launch.
+</p>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+    </div>
+</section>
+
+
+<section class="container py-5 text-center contact my-3">
+    <h2 class="mb-4">Contact</h2>
+    <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="32px"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg> <span class="no-select">
+  <span>srbija035</span><span>&#64;</span><span>yahoo</span><span>&#46;</span><span>com</span>
+</span></p>
+    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="32px"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg> <a href="https://www.linkedin.com/in/aleksandar-stojanovic-419176239/" target="_blank">LinkedIn profile</a></p>
+    </div>
+</section>
+<footer class="bg-dark text-white text-center py-3 ">
+    © 2026 Aleksandar Stojanovic | All rights reserved
+</footer>
+<script>
+const buttons = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.masonry-item');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        items.forEach(item => {
+            if (filter === '*' || item.classList.contains(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
