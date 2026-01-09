@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Mono&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<script type="text/javascript" src="https://kakozaraditibitcoin.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 </head>
 <body>
 
@@ -19,25 +24,29 @@
   </div>
 </nav>
 
-<header class="hero text-white text-center">
+<header class="hero text-white text-center mb-3">
    <div class="row justify-content-center text-center">
         <div class="col-md-7 px-5 ">
-          <h1 class="heading gsap-reveal-hero mb-3 mt-5"><span class="reveal-wrap">
+          <h1 class="heading gsap-reveal-hero mb-3 mt-5 animate__animated animate__slideInDown"><span class="reveal-wrap">
             <span class="cover" style="margin-left: 102%;"></span><span class="reveal-content" style="transform: matrix(1, 0, 0, 1, 0, 0);"><strong>Front-End<span class="text-primary">.</span>Web Developer</strong></span></span></h1>
 
 <!-- <h2><span class="reveal-wrap">
            Aleksandar Stojanovic
           </h2> -->
 
-          <h3 class="subheading gsap-reveal-hero mb-4"><span class="reveal-wrap"><span class="cover" style="margin-left: 102%;"></span><span class="reveal-content" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-            Front-End Web Developer with 10+ years of experience. Designing and developing modern websites with a focus on usability and performance.
-          </span></span></h3>
+        <h3 class="subheading mb-4">
+  <span
+    class="typewriter"
+    data-text="Front-End Web Developer with 20+ years of experience. Designing and developing modern websites with a focus on usability and performance.">
+  </span>
+</h3>
+
 
           <p class="gsap-reveal-hero">
             <span class="reveal-wrap">
                 <span class="cover" style="margin-left: 102%;"></span>
                 <span class="reveal-content" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-                    <a href="#readmore"  class="btn btn-outline-black">
+                    <a href="#readmore"  class="btn btn-outline-black" onclick="navigator.vibrate(100)">
                         Read more about me</a></span></span></p>
          
         </div>
@@ -45,12 +54,12 @@
 </header>
 
 
-<section class="container my-4" id="projects">
+<section class="container my-4 animate__animated animate__fadeIn speed3" id="projects">
 
-    <h2 class="text-center mb-5 pt-4">Selected Projects</h2>
+    <h2 class="text-center mb-5 pt-4 ">Selected Projects</h2>
 
     <!-- FILTERS -->
-    <div class="text-center mb-5 pm-1 project-filters">
+    <div class="text-center mb-4 pm-1 project-filters">
         <button class="filter-btn active" data-filter="*">All</button>
         <button class="filter-btn" data-filter="custom">Custom</button>
         <button class="filter-btn" data-filter="wordpress">WordPress</button>
@@ -59,120 +68,116 @@
         
     </div>
 
-    <!-- MASONRY -->
+    <!------------------------------------------------- MASONRY ------------------------------------->
     <div class="masonry-grid">
 
-      <div class="masonry-item wordpress custom">
-            <img src="images/img_1.jpg" alt="">
+
+
+
+      <div class="masonry-item custom">
             <div class="masonry-content">
-                <h5>Online Invitations</h5>
-                <h6>Custom invitation platform for weddings and celebrations</h6>
-                <p>Complete concept, UX, visual design and front-end development, including custom layouts and interactive templates for mini websites and social sharing.</p>
-                <span>HTML</span><span>CSS</span><span>Custom Design</span><span>Frontend</span>
+                <div class="box-img"><a href="#"  target="_blank" onclick="navigator.vibrate(100)" rel="nofollow"><img src="images/img_1.jpg" alt=""></a></div>
+                <div class="box-all">
+                    <h5><a href="#" class="stretched-link" target="_blank" rel="nofollow">Online Invitations</a></h5>
+                        <h6>Custom invitation platform for weddings and celebrations</h6>
+                        <p>Complete concept, UX, visual design and front-end development, including custom layouts and interactive templates for mini websites and social sharing.</p>
+                </div>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>Custom Design</span><span>Frontend</span></div>
             </div>
         </div>  
 
+        
         <div class="masonry-item landing platforms custom">
-            <img src="images/img_2.jpg" alt="">
             <div class="masonry-content">
-                <h5>Klik website</h5>
-                <h6>Drag-and-drop website builder CMS similar to Wix.</h6>
-                <p>Developed custom themes, layouts and frontend components, working closely with backend developers on CMS customization and client-specific solutions.</p>
-                <span>Custom CMS</span><span>HTML</span><span>CSS</span><span>Frontend</span><span>UI</span>
+                <div class="box-img"><a href="https://www.kliksajt.com/" target="_blank" rel="nofollow"><img src="images/img_2.jpg" onclick="navigator.vibrate(100)" alt=""></a></div>
+                <div class="box-all">
+                    <h5><a href="https://www.kliksajt.com/" target="_blank" class="stretched-link" rel="nofollow">Klik website</a></h5>
+                        <h6>Drag-and-drop website builder CMS similar to Wix</h6>
+                        <p>Developed custom themes, layouts and frontend components, working closely with backend developers on CMS customization and client-specific solutions.</p>
+                </div>
+                <div class="tags"><span>Custom CMS</span><span>HTML</span><span>CSS</span><span>Frontend</span><span>UI</span></div>
             </div>
         </div>
 
-      
-
-     
-
-        
-        <!--<div class="masonry-item logo">
-            <img src="images/img_10.jpg" alt="">
-            <div class="masonry-content">
-                <h5>3D print studio Kameni</h5>
-                <h6>Logo design for a 3D printing studio and fabrication service.</h6>
-                <p>Created a modern and technical logo reflecting precision, manufacturing and digital production.</p>
-                 <span>Logo</span><span>Technology</span><span>3D Printing</span><span>Branding</span>
-            </div>
-        </div>-->
-
        
-            <div class="masonry-item wordpress corporate">
-            <img src="images/img_4.jpg" alt="">
+        <div class="masonry-item wordpress corporate">
             <div class="masonry-content">
-               
-                <h5>Aria One Events</h5>
-                <h6>Corporate website for an international event organization agency.</h6>
-                <p>Full WordPress build including custom layout, visual styling, content structure and image optimization for a professional corporate presentation.</p>
-                <span>WordPress</span><span>HTML</span><span>CSS</span><span>Corporate</span>
+                <div class="box-img"><a href="https://ariaone-cc.com" rel="nofollow" target="_blank"><img src="images/img_4.jpg" onclick="navigator.vibrate(100)" alt=""></a></div>
+                <div class="box-all">
+                    <h5><a href="https://ariaone-cc.com" class="stretched-link" rel="nofollow" target="_blank">Aria One Events</a></h5>
+                    <h6>Corporate website for an international event organization agency</h6>
+                    <p>Full WordPress build including custom layout, visual styling, content structure and image optimization for a professional corporate presentation.</p>
+                </div>
+                <div class="tags"><span>WordPress</span><span>HTML</span><span>CSS</span><span>Corporate</span></div>
             </div>
         </div>
 
           <div class="masonry-item custom">
-            <img src="images/img_8.jpg" alt="">
-            <div class="masonry-content">
-                <h5>Dance Website Asia</h5>
-                <h6>Custom CMS website for an international dance organization</h6>
-                <p>Designed and developed a full custom theme and frontend structure for an English-language market, including layout, styling and CMS integration.</p>
-            
-                <span>PHP</span><span>Custom CMS</span><span>HTML</span><span>CSS</span><span>International</span>
+              <div class="masonry-content">
+                <div class="box-img"><a href="https://web.archive.org/web/20151213092402/http://www.cerocasia.com/" target="_blank" rel="nofollow"><img src="images/img_8.jpg" onclick="navigator.vibrate(100)" alt=""></a></div>
+                <div class="box-all">
+                    <h5><a href="https://cerocasia.com" class="stretched-link" target="_blank" onclick="navigator.vibrate(100)" rel="nofollow">Website Asia</a></h5>
+                    <h6>Custom CMS website for an international dance organization</h6>
+                    <p>Designed and developed a full custom theme and frontend structure for an English-language market, including layout, styling and CMS integration.</p>
+                </div>
+                <div class="tags"><span>PHP</span><span>Custom CMS</span><span>HTML</span><span>CSS</span><span>International</span></div>
             </div>
         </div>
         
        
 
-<div class="masonry-item custom">
-            <img src="images/img_7.jpg" alt="">
-            <div class="masonry-content">
-                <h5>Almost Home Lola</h5>
-                <h6>Multilingual website for apartments and accommodation</h6>
-                <p>Complete WordPress implementation with custom layout, apartment listings and inquiry-based booking form instead of classic reservation flow.</p>
-                <span>WordPress</span><span>HTML</span><span>Hospitality</span>
+<div class="masonry-item custom wordpress">
+    <div class="masonry-content">
+            <div class="box-img"><a href="https://www.apartmanibudva-dib.com/en/home/" target="_blank" rel="nofollow"><img src="images/img_5.jpg" alt="" onclick="navigator.vibrate(100)"></a></div>
+                <div class="box-all">
+                    <h5><a href="https://www.apartmanibudva-dib.com/en/home/" target="_blank" rel="nofollow" class="stretched-link">Budva DIB Hostel</a></h5>
+                    <h6>Multilingual booking website for apartments and hostel accommodation</h6>
+                    <p>Complete WordPress implementation featuring apartment listings, multilingual content and an integrated booking system tailored for hospitality and tourism use.</p>
+                </div>
+                <div class="tags"><span>WordPress</span><span>Booking</span><span>PHP</span><span>Multilingual</span></div>
             </div>
         </div>
 
 
          <div class="masonry-item custom corporate">
-            <img src="images/img_6.jpg" alt="">
-            <div class="masonry-content">
-                <h5>Support for Victims</h5>
-                <h6>Government-funded NGO website supported by EU programs.</h6>
-                <p>Complete visual design and frontend development, including custom PHP theme, multilingual structure and content-focused layout for institutional use.</p>
-                 <span>PHP</span><span>Custom CMS</span><span>HTML</span><span>CSS</span><span>Multilingual</span>
+             <div class="masonry-content">
+                <div class="box-img"><a href="https://web.archive.org/web/20250220233014/https://www.podrskazrtvama.rs/en/" rel="nofollow" target="_blank"><img src="images/img_6.jpg" alt="" onclick="navigator.vibrate(100)"></a></div>
+                <div class="box-all">
+                    <h5><a href="https://web.archive.org/web/20250220233014/https://www.podrskazrtvama.rs/en/" rel="nofollow" target="_blank" class="stretched-link">Support for Victims</a></h5>
+                    <h6>Government-funded NGO website supported by EU programs</h6>
+                    <p>Complete visual design and frontend development, including custom PHP theme, multilingual structure and content-focused layout for institutional use.</p>
+                </div>
+                 <div class="tags"><span>PHP</span><span>Custom CMS</span><span>HTML</span><span>CSS</span><span>Multilingual</span></div>
             </div>
         </div>
- <!--<div class="masonry-item logo">
-            <img src="images/img_14.jpg" alt="">
-            <div class="masonry-content">
-                <h5>Online Invitations</h5>
-                <h6>Logo design for a custom online invitation platform.</h6>
-                <p>Designed a flexible logo system suitable for digital use, social sharing and themed invitation layouts.</p>
-                 <span>Logo</span><span>Digital Product</span><span>Branding</span>
-            </div>
-        </div>-->
+
      
 
+
+
     </div>
+    <!------------------------------------- MASONRY -------------------------------------->
 </section>
 <hr>
-<section class="container my-4 px-4" id="additional-projects">
+<section class="container my-4 px-4 animate-on-scroll" id="additional-projects">
   
   <h2 class="section-subtitle text-left mb-5 pt-4">Additional Projects</h2>
    <p class=" text-left mb-5">A selection of additional projects demonstrating experience across different
 industries and platforms.</p>
   <ul>
-     <li>International corporate website, SEO-focused structure - Alumil</li>
-    <li>Product catalog website (WordPress / WooCommerce) – Mibax</li>
-    <li>SEO-driven content portal (WordPress) custom homepage & optimized blog – Kako Zaraditi Bitcoin</li>
-    <li>Price comparison & aggregation concept, custom layout with search – Kupujem bebi</li>
+      <li>Product catalog website (WordPress / WooCommerce) – <a href="https://www.mibax.rs" target="_blank" rel="nofollow">Mibax</a></li>
+      <li>SEO-driven content portal (WordPress) custom homepage & optimized blog – <a href="https://kakozaraditibitcoin.com" target="_blank" rel="nofollow">Kako Zaraditi Bitcoin</a></li>
+      <li>Price comparison & aggregation concept, custom layout with search – <a href="https://kakozaraditibitcoin.com" target="_blank" rel="nofollow">Kupujem bebi</a></li>
+      <li>Multilingual accommodation website (WordPress), apartment listings and inquiry-based form - <a href="https://www.almosthomelola.rs/" target="_blank" rel="nofollow">Almost Home Lola</a></li>
+      <li>International corporate website, SEO-focused structure - <a href="https://www.alumil.com/international/homeowners" target="_blank" rel="nofollow">Alumil</a></li>
+
   </ul>
 </section>
 
 
 
 <hr>
-<section class="container my-4" id="logos">
+<section class="container my-4 animate-on-scroll" id="logos">
      <h2 class="section-subtitle text-left mb-5 pt-4">Branding & Logo Work</h2>
  
   <p class="section-note text-left mb-5">
@@ -180,31 +185,39 @@ industries and platforms.</p>
   </p>
  <div class="masonry-grid">
      <div class="masonry-item logo">
-            <img src="images/img_13.jpg" alt="">
-            <div class="masonry-content">
-                <h5>JIN CAI Asian Hot Pot</h5>
-                <h6>Logo design for an Asian hot pot restaurant with unlimited dining concept</h6>
-                <p>Created a strong, recognizable visual identity inspired by Asian cuisine, fire and communal cooking experience.</p>
-                 <span>Logo</span><span>Branding</span><span>Restaurant</span><span>Visual Design</span>
+         <div class="masonry-content">
+                <div class="box-img"><img src="images/img_13.jpg" onclick="navigator.vibrate(100)" alt=""></div>
+                <div class="box-all"><h5>JIN CAI Asian Hot Pot</h5>
+                    <h6>Logo design for an Asian hot pot restaurant with unlimited dining concept</h6>
+                    <p>Created a strong, recognizable visual identity inspired by Asian cuisine, fire and communal cooking experience.</p>
+                </div>
+                 <div class="tags"><span>Logo</span><span>Branding</span><span>Restaurant</span><span>Visual Design</span></div>
             </div>
         </div>
+
+        
       <div class="masonry-item logo">
-            <img src="images/img_12.jpg" alt="">
+           
             <div class="masonry-content">
-                <h5>GoHiking</h5>
-                <h6>Logo design for a hiking and outdoor activities brand</h6>
-                <p>Developed a clean and versatile logo reflecting nature, movement and outdoor exploration..</p>
-                 <span>Logo</span><span>Outdoor</span><span>Branding</span><span>Visual Identity</span>
+                <div class="box-img"><img src="images/img_12.jpg" onclick="navigator.vibrate(100)" alt=""></div>
+                <div class="box-all">
+                    <h5>GoHiking</h5>
+                    <h6>Logo design for a hiking and outdoor activities brand</h6>
+                    <p>Developed a clean and versatile logo reflecting nature, movement and outdoor exploration..</p>
+                </div>
+                 <div class="tags"><span>Logo</span><span>Outdoor</span><span>Branding</span><span>Visual Identity</span></div>
             </div>
         </div>
 
      <div class="masonry-item logo">
-            <img src="images/img_11.jpg" alt="">
             <div class="masonry-content">
-                <h5>Kupujem bebi</h5>
-                <h6>Logo design for a baby products price comparison platform</h6>
-                <p>Created a friendly and trustworthy visual identity aimed at parents, with a clean, approachable style suitable for digital platforms and content-driven websites.</p>
-                 <span>Logo</span><span>Branding</span><span>Visual Identity</span><span>E-commerce</span>
+                <div class="box-img"><img src="images/img_11.jpg" onclick="navigator.vibrate(100)" alt=""></div>
+                <div class="box-all">
+                    <h5>Kupujem bebi</h5>
+                    <h6>Logo design for a baby products price comparison platform</h6>
+                    <p>Created a friendly and trustworthy visual identity aimed at parents, with a clean, approachable style suitable for digital platforms and content-driven websites.</p>
+                </div>
+                 <div class="tags"><span>Logo</span><span>Branding</span><span>Visual Identity</span><span>E-commerce</span></div>
             </div>
         </div>
     
@@ -212,7 +225,7 @@ industries and platforms.</p>
 </section>
 
 
-<section class="bg-light py-5 pb-0 about-me" id="readmore">
+<section class="bg-light py-5 pb-0 about-me animate-on-scroll" data-animate="animate__fadeIn" id="readmore">
     <div class="container text-center">
         
         
@@ -223,21 +236,11 @@ industries and platforms.</p>
             <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero mt-3">Aleksandar Stojanovic</h3>
             <p class="gsap-reveal-hero text-center pt-3">Front-End Web Developer</p>
           </div>
-            <div class="col-lg-12 " style="position: relative;top: -80px; padding: 10px;">
-            <p class="mt-0">Over the years, I’ve built and maintained 80+ websites for small and medium
-businesses, working on both agency and freelance projects.
-</p><p>
-My work often covers the full front-end process — from initial design concepts,
-layout and UI details, through clean HTML/CSS implementation, to custom
-WordPress themes and CMS-ready templates.
-</p><p>
-In addition to development, I’ve worked on visual branding tasks such as logo
-design, vector graphics, print-ready materials and photo optimization, ensuring
-that both design and code work together as a consistent, practical solution.
-</p><p>
-I focus on clear structure, maintainable code and SEO-friendly implementation,
-building websites that remain reliable and easy to manage long after launch.
-</p>
+            <div class="col-lg-12 " style="position: relative;top: -80px; padding: 0 20%;">
+            <p class="mt-0">Over the years, I’ve built and maintained 80+ websites for small and medium businesses, working on both agency and freelance projects.</p>
+            <p>My work often covers the full front-end process — from <strong>initial design concepts, layout and UI details</strong>, through clean HTML/CSS implementation, to custom WordPress themes and CMS-ready templates.</p>
+            <p>In addition to development, I’ve worked on visual branding tasks such as <strong>logo design, vector graphics, print-ready materials and photo optimization</strong>, ensuring that both design and code work together as a consistent, practical solution.</p>
+            <p>I focus on clear structure, maintainable code and SEO-friendly implementation, building websites that remain reliable and easy to manage long after launch.</p>
 </div>
 
 
@@ -284,7 +287,103 @@ buttons.forEach(btn => {
     });
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const animation =
+          entry.target.dataset.animate || "animate__fadeInUp";
+
+        entry.target.classList.add(
+          "animate__animated",
+          "speed4",
+          animation
+        );
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.querySelector(".typewriter");
+  if (!el) return;
+
+  const text = el.dataset.text;
+  let index = 0;
+  let typing = true;
+
+  function finish() {
+    el.textContent = text;
+    el.classList.add("done");
+    typing = false;
+  }
+
+  function type() {
+    if (!typing) return;
+
+    if (index < text.length) {
+      el.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 35);
+    } else {
+      finish();
+    }
+  }
+
+  // ESC na desktopu
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      finish();
+    }
+  });
+
+  // TAP / CLICK na tekst (mobile + desktop)
+  el.addEventListener("click", function () {
+    if (typing) {
+      finish();
+    }
+  });
+
+  type();
+});
+</script>
 
 
+
+<script>            
+	jQuery(document).ready(function() {
+  var offset = 520;
+  var duration = 500;
+
+  jQuery('.back-to-top').hide(); // <-- OVO
+
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+      jQuery('.back-to-top').fadeIn(duration);
+    } else {
+      jQuery('.back-to-top').fadeOut(duration);
+    }
+  });
+
+  jQuery('.back-to-top').click(function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({ scrollTop: 0 }, duration);
+    return false;
+  });
+});
+		</script>
+
+
+<a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M297.4 169.4C309.9 156.9 330.2 156.9 342.7 169.4L534.7 361.4C547.2 373.9 547.2 394.2 534.7 406.7C522.2 419.2 501.9 419.2 489.4 406.7L320 237.3L150.6 406.6C138.1 419.1 117.8 419.1 105.3 406.6C92.8 394.1 92.8 373.8 105.3 361.3L297.3 169.3z"/></svg></a>
 </body>
 </html>
